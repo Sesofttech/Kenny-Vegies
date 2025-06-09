@@ -1,0 +1,108 @@
+ body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      scroll-behavior: smooth;
+    }
+    .search-box {
+      display: flex;
+      border-radius: 50px;
+      overflow: hidden;
+      width: 400px;
+      max-width: 90%;
+      background-color: #e5e5e5;
+    }
+
+    .search-box input[type="text"] {
+      border: none;
+      padding: 15px 20px;
+      width: 100%;
+      font-size: 16px;
+      border-radius: 50px 0 0 50px;
+      outline: none;
+      background-color: #e5e5e5;
+    }
+
+    .search-box button {
+      background-color: #8000ff; 
+      border: none;
+      padding: 0 20px;
+      cursor: pointer;
+      border-radius: 0 50px 50px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .search-box button i {
+      color: white;
+      font-size: 18px;
+    }
+
+    nav {
+      background-color: #4cb041;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: right;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 15px;
+    }
+
+    nav ul li a:hover {
+      background-color: #333;
+    }
+
+    section {
+      padding: 100px 20px;
+      min-height: 100vh;
+    }
+
+    #home {
+      background-color: #f4f4f4;
+     margin: 0;
+      padding: 0;
+      height: 50vh;
+      background-image: url('home background.jpg'); 
+      background-size:cover;       
+      background-position: center; 
+      background-repeat: no-repeat; 
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    #about {
+      background-color: #e8e8e8;
+    }
+
+    #products {
+      background-color: #fdf6e3;
+    }
+
+    #login {
+      background-color: #e0f7fa;
+    }
+
+    #cart {
+      background-color: #ffe0b2;
+    }
+
+    h1, h2 {
+      margin-top: 0;
+    }
