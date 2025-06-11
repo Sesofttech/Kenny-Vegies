@@ -53,6 +53,7 @@
       justify-content: right;
       margin: 0;
       padding: 0;
+      font-size: 30px;
     }
 
     nav ul li {
@@ -70,7 +71,7 @@
       background-color: #dcdcdc;
     }
     .nav_home_logo{
-      width: 13%;
+      width: 20%;
       max-width: 5%;
       max-height: 100%;
       display: block;
