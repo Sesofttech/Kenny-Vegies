@@ -167,3 +167,16 @@
   img{
       width: 100px;
   }
+  .p1{
+    font-weight: bold;
+    text-align: left;
+    color: #006400;
+    text-decoration: #006400;
+  }
+  .centered-content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

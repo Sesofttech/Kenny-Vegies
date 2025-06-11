@@ -9,43 +9,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <header>
-            <h1>kenny vegetables</h1>
-        </header>
-      <div class="search-box">
-        <input type="text" placeholder="Search...">
-        <button><i class="fas fa-search icon"></i></button>
-      </div>
+  <nav>
+    <header>
+      <h1>kenny vegetables</h1>
+    </header>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search...">
+      <button><i class="fas fa-search icon"></i></button>
+    </div>
+
     <ul>
       <li><a href="{% url 'home' %}"><img class="nav_home_logo" src="{% static 'images/logo.svg' %}" alt="Kenny Vegies"></a></li>
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#products">Products</a></li>
       <li><a href="{% url 'contact' %}">Contact Us</a></li>
-      <li><a href="#login"><button class="login-btn"><i class="fas fa-user"></i></button>Login</a></li>
+      <li><a href="{% url 'signup' %}"><button class="login-btn"><i class="fas fa-user"></i></button>Register</a></li>
+      <li><a href="{% url 'login' %}"><button class="login-btn"><i class="fas fa-user"></i></button>Login</a></li>
       <li><a href="#cart"><button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i></button>Basket</a></li>
     </ul>
   </nav>
 
   <section id="home">
     <h1>Welcome to Kenny Vegetables</h1>
-<p>
-  Freshness you can taste, quality you can trust! At Kenny Vegetables, <br>
-  we are passionate about delivering farm-fresh fruits and vegetables <br>
-  straight to your doorstep. 
-  Whether you're shopping for your family or your business, we guarantee <br>
-  the best produce at affordable prices.
-  Browse our selection, place your order online, and enjoy same-day <br>
-  delivery across town. Eat healthy, live better — with Kenny Vegetables.
-</p>
+    <p>
+      Freshness you can taste, quality you can trust! At Kenny Vegetables, <br>
+      we are passionate about delivering farm-fresh fruits and vegetables <br>
+      straight to your doorstep. 
+      Whether you're shopping for your family or your business, we guarantee <br>
+      the best produce at affordable prices.
+      Browse our selection, place your order online, and enjoy same-day <br>
+      delivery across town. Eat healthy, live better — with Kenny Vegetables.
+    </p>
   </section>
 
   <section id="about">
     <h2>About Us</h2>
-    <p>kenny vegetables is committed to bringing you the freshest <br>
-         produce directly from farms. Our mission is to promote healthy <br>   
-          living through convenient access to quality food.</p>
+    <p>
+      kenny vegetables is committed to bringing you the freshest <br>
+      produce directly from farms. Our mission is to promote healthy <br>
+      living through convenient access to quality food.
+    </p>
   </section>
 
   <section id="products">

@@ -1,5 +1,6 @@
+from django.http import HttpResponse
 from django.shortcuts import render, redirect
-from .forms import ContactUsForm
+from .forms import ContactUsForm, UserRegistration, UserLogin
 
 
 # Create your views here.
@@ -17,7 +18,7 @@ def contact_page(request):
     else:
         form = ContactUsForm()
     context = {'form':form}
-    return render(request, 'success/message_success.html')
+    return render(request, 'success/contact_us.html',context)
 
 # Sent Message Success
 def message_success(request):
@@ -25,8 +26,32 @@ def message_success(request):
 
 # User Signup
 def sign_up(request):
-    pass
+    if request.method=="POST":
+        form = UserRegistration(request.POST)
+        if form.is_valid():
+            return redirect('user_registered_successfully')
+    else:
+        form=UserRegistration()
+
+    context={'form':form}
+    return render(request, 'users/signup.html',context)
 
 # User Login
 def login(request):
-    pass
+    if request.method=="POST":
+       login=UserLogin(request.POST)
+       if login.is_valid():
+           return redirect('login-success')
+    else:
+       login=UserLogin()
+
+    context={'form':login}
+    return render(request,'users/login.html',context)
+
+# Login Success
+def login_success(request):
+    return render(request, 'success/login-success.html')
+
+# User Registered Successfully
+def registered_successfully(response):
+    return render(response, 'success/user_success.html')

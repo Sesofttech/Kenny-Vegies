@@ -10,9 +10,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1>Talk to Us</h1>
-    {% csrf_token %}
-    {{form.as_p}}
-    <button type="submit">Send</button>
+    <form action="{url 'contact'}" method="post">
+        <h1 class="head-1">Talk to Us</h1>
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit" class="btn">Send</button>
+    </form>
+   
 </body>
 </html>
